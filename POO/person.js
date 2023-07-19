@@ -38,18 +38,21 @@ class Persona {
             peso_${this.peso}
             altura_${this.altura}
             IMC_${this.peso/(this.altura*this.altura)}
-            edad_${this.edad}`)}
+            edad_${this.edad}`)
+    }
     
     agregarhobbies(hobbies){
 
-        this.hobbies.push([hobbies])           
+        this.hobbies.push(...hobbies)           
     
     }
     
     printhobbies(){
-        return this.hobbies;
+        this.hobbies.forEach(hobbie => {
+            console.log(hobbie);
+        });
     }
-    }   
+}   
         
     let persona1 = new Persona("Diana Carolina","Gonzales Alayo",1980,60,1.5,["correr","futbol","padel"])
     console.log(persona1);
@@ -58,7 +61,9 @@ class Persona {
     persona1.calculoIMC();
     persona1.calculoEdad()
     persona1.printall();
-    console.log("hobbie:" + persona1.printhobbies(["correr","futbol","padel"]));
+    console.log("h--------------------:" );
+    console.log("hobbies:");
+    persona1.printhobbies()
 
     let persona2 = new Persona("Miguel Ignacio", "Sanchez Morales", 1970,70,1.6,["leer","play","ajedrez"])
     console.log(persona2);
@@ -71,7 +76,8 @@ class Persona {
     persona2.calculoIMC();
     persona2.calculoEdad();
     persona2.printall();
-    console.log("hobbie:" + persona2.printhobbies(["leer","play","ajedrez"]));
+    console.log("--------------------:" );
+    console.log("hobbies:");
+    persona2.printhobbies()
 
-
-    module.exports.Persona = Persona;
+   exports.Persona = Persona;
