@@ -13,7 +13,10 @@ library.setAddress("Goya");
 console.log(library.getAddress());
 library.setManager("Maria");
 console.log(library.getManager());
+console.log(library.toString());
 console.log("Cantidad de libros:" + library.getNumberOfBooks())
 
 const author = "Gabriel Garcia Marquez"
-console.log(`Find the author ${author}`)
+console.log(`Buscaremos al autor ${author}`)
+const booksByAuthor = library.findByAuthor(author)
+booksByAuthor.forEach(book => console.log(book.toString()))

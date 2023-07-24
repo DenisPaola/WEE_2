@@ -35,17 +35,19 @@ export class Library {
         return this.books.length
     }
 
-    
-    // public findByAuthor(author:string):Book[]{
-    //     return this.book    
-    
-    // }
+    /* filtra todos los libros en donde el author que paso por parametro sea igual a cada author de cada 
+    instancia de libro contenido en el array de libros */
+    public findByAuthor(author:string):Book[]{
+        return this.books.filter(book => author === book.getAuthor())
+    }
 
-    // public toString(): string{
-    //     let library = ''
-    //     this.books.forEach(  )
-
-    // }
+    public toString(): string{
+        let libraryInfo = ''
+        this.books.forEach((book, i) => {
+            libraryInfo += `Book${i + 1}:\n${book.toString()}`
+        })
+        return libraryInfo;
+    }
 }
 
 
