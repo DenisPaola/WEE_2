@@ -9,4 +9,7 @@ function isEven(number: number): void {
     }
 }
 
+isEven(2);
+isEven(3);
+
 export { isEven };
