@@ -9,9 +9,9 @@ function continent(country: string): void {
 
     for (const continentName in continents) {
         if (continents[continentName].includes(country)) {
-            console.log(`${country} está en ${continentName}`);
+            console.log(`${country} está en ${continentName}`); 
             return;
-        }
+        } 
     }
 
         console.log(`No hay información sobre el continente donde esta ubicado ${country} `);

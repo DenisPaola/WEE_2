@@ -1,4 +1,4 @@
-// Función para imprimir los números impares hasta el número indicado
+// Función para imprimir los números impares hasta el número indicado.
 function evenNumbers(num: number): void {
     for (let i = 1; i <= num; i++) {
         if(i % 2 !== 0){

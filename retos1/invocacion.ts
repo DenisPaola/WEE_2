@@ -10,7 +10,7 @@ const array3 = ["Venezuela", "Veneno", "Voltaje"];
 // Invocación de la función isEven y la función add para cada array
 const sumArray1 = add(array1);
 const sumArray2 = add(array2);
-const sumArray3 = add(array3);
+const sumArray3 = add(array3); 
 
 console.log("Array 1:");
 console.log("La suma de caracteres es:"+ sumArray1);

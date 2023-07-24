@@ -1,4 +1,4 @@
-// Función para verificar si existe un número par en el array de números
+// Función para verificar si existe un número par en el array de números.
 function hasEven(myNums: number[]): boolean {
     let i = 0;
     while (i < myNums.length) {

@@ -57,7 +57,7 @@ function zodiac(day:number, month:number): string{
         return "Sagitario"
     }
 
-    return "Capricornio"
+    return "Capricornio" 
 }
 
 console.log(zodiac(21,12))
