@@ -1,5 +1,3 @@
-// buclesWhile.ts
-
 // Función para verificar si existe un número par en el array de números
 function hasEven(myNums: number[]): boolean {
     let i = 0;
@@ -16,9 +14,8 @@ function hasEven(myNums: number[]): boolean {
 function startWithM(myNames: string[]): boolean {
     let i = 0;
     while (i < myNames.length) {
-        // @ts-ignore
-        if (!myNames[i].startsWith('M')) {
-            return false;
+        if (!(myNames[i] === "M")) {
+            return false; 
         }
         i++;
     }
@@ -26,3 +23,6 @@ function startWithM(myNames: string[]): boolean {
 }
 
 
+console.log(hasEven([1,2,3]))
+console.log(startWithM(["verde","gris","azul"]))
+console.log(startWithM(["Madre","Mris","Mzul"]))

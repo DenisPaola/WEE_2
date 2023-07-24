@@ -1,6 +1,4 @@
-// invocacion.ts
-
-// Importar las funciones desde los archivos correspondientes
+// Importar las funciones desde los archivos isEven y buclesFor
 import { isEven } from './isEven';
 import { add } from './buclesFor';
 
@@ -15,13 +13,13 @@ const sumArray2 = add(array2);
 const sumArray3 = add(array3);
 
 console.log("Array 1:");
-console.log("La suma de caracteres es:", sumArray1);
+console.log("La suma de caracteres es:"+ sumArray1);
 isEven(sumArray1);
 
 console.log("\nArray 2:");
-console.log("La suma de caracteres es:", sumArray2);
+console.log("La suma de caracteres es:"+ sumArray2);
 isEven(sumArray2);
 
 console.log("\nArray 3:");
-console.log("La suma de caracteres es:", sumArray3);
+console.log("La suma de caracteres es:"+ sumArray3);
 isEven(sumArray3);

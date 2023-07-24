@@ -1,4 +1,3 @@
-// continent.ts
 function continent(country: string): void {
     const continents = {
         Europa: ["España", "Francia", "Alemania", "Italia", "Reino Unido"],
@@ -15,5 +14,8 @@ function continent(country: string): void {
         }
     }
 
-    console.log(`No se encontró información sobre ${country} en qué continente está.`);
+        console.log(`No hay información sobre el continente donde esta ubicado ${country} `);
 }
+
+continent("Mexico");
+continent("Egipto");
