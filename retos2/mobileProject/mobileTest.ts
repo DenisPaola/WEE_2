@@ -19,7 +19,7 @@ myMobile.setTrademark("Xiaomi");
 myMobile.setModel("Mi10TPRO");
 myMobile.setPrice(350);
 
-// imprimiendo Nuevos resultados
+// imprimiendo Nuevos resultados de mobiles:
 
 console.log("\nDatos actuales del mobil:");
 console.log(`Nombre:` + myMobile.getName());
