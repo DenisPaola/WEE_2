@@ -8,7 +8,7 @@ export class Mobile{
     private color: string
     private price: number
 
-    //constructor de la clase con mismos parámetros de entrada que atributos.
+    //constructor de la clase con mismos parámetros de entrada que atributos:
 
     constructor(name:string, trademark:string, model:string, color:string, price:number){
         this.name = name
